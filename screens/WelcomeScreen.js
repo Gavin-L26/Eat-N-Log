@@ -15,10 +15,14 @@ export default function WelcomeScreen({ navigation }) {
         <Text style={styles.subtitle}>EatNLog</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title="Login" onPress={() => navigation.navigate("Login")} />
+        <AppButton
+          title="Login"
+          textColor="Background"
+          onPress={() => navigation.navigate("Login")}
+        />
         <AppButton
           title="Register"
-          color="stormCloud"
+          color="Background"
           onPress={() => navigation.navigate("Register")}
         />
       </View>
@@ -31,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
-    backgroundColor: Colors.stormCloud,
+    backgroundColor: Colors.Background,
   },
   logoContainer: {
     position: "absolute",

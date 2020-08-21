@@ -77,7 +77,7 @@ export default function LoginScreen({ navigation }) {
           rightIcon={rightIcon}
           handlePasswordVisibility={handlePasswordVisibility}
         />
-        <FormButton title={"Login"} />
+        <FormButton title={"Login"} textColor={"Background"} />
         {<FormErrorMessage error={loginError} visible={true} />}
       </Form>
       <View style={styles.footerButtonContainer}>
@@ -88,7 +88,6 @@ export default function LoginScreen({ navigation }) {
       <IconButton
         style={styles.backButton}
         iconName="keyboard-backspace"
-        color="#fff"
         size={30}
         onPress={() => navigation.goBack()}
       />
@@ -99,7 +98,7 @@ export default function LoginScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    backgroundColor: Colors.stormCloud,
+    backgroundColor: Colors.lightGrey,
   },
   footerButtonContainer: {
     marginVertical: 15,
@@ -107,11 +106,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   forgotPasswordButtonText: {
-    color: Colors.white,
+    color: Colors.secondary,
     fontSize: 18,
     fontWeight: "600",
   },
   backButton: {
+    color: Colors.secondary,
     justifyContent: "center",
     alignItems: "center",
   },

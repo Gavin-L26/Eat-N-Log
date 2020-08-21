@@ -51,7 +51,7 @@ export default function ForgotPasswordScreen({ navigation }) {
           textContentType="emailAddress"
           autoFocus={true}
         />
-        <FormButton title="Forgot Password" />
+        <FormButton title="Forgot Password" textColor="Background" />
         {<FormErrorMessage error={customError} visible={true} />}
       </Form>
       <IconButton

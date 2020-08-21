@@ -2,14 +2,23 @@ import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
 import useStatusBar from "../hooks/useStatusBar";
+import { logout } from "../components/Firebase/firebase";
 
-const ThirdScreen = (props) => {
+const UserScreen = (props) => {
   useStatusBar("dark-content");
+
+  async function handleSignOut() {
+    try {
+      await logout();
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <View style={styles.screen}>
-      <Text> ~~ This is the ThirdScreen ~~ </Text>
-      <Text> I am under construction </Text>
+      <Text> ~~ This is the User Screen ~~ </Text>
+      <Button title="Sign Out" onPress={handleSignOut} />
     </View>
   );
 };
@@ -23,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ThirdScreen;
+export default UserScreen;

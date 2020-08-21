@@ -8,9 +8,10 @@ const navigationTheme = {
   colors: {
     ...DefaultTheme.colors,
     primary: Colors.primary,
-    text: Colors.primary,
-    border: Colors.stormCloud,
-    background: Colors.ghostWhite,
+    card: Colors.secondary,
+    text: Colors.Background,
+    border: Colors.primary,
+    background: Colors.Background,
   },
 };
 
