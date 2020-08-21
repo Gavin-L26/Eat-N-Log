@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import React from "react";
+import { StyleSheet, Text } from "react-native";
 
-import Colors from '../../utils/colors';
+import Colors from "../../utils/colors";
 
 export default function FormErrorMessage({ error, visible }) {
   if (!error || !visible) {
@@ -14,9 +14,9 @@ export default function FormErrorMessage({ error, visible }) {
 const styles = StyleSheet.create({
   errorText: {
     marginLeft: 15,
-    color: Colors.red,
+    color: Colors.ErrorRed,
     fontSize: 16,
     marginBottom: 5,
-    fontWeight: '600'
-  }
+    fontWeight: "600",
+  },
 });

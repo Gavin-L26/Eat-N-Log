@@ -17,13 +17,13 @@ export default function AppTextInput({
         <MaterialCommunityIcons
           name={leftIcon}
           size={20}
-          color={Colors.stormCloud}
+          color={Colors.secondary}
           style={styles.icon}
         />
       )}
       <TextInput
         style={styles.input}
-        placeholderTextColor={Colors.stormCloud}
+        placeholderTextColor={Colors.PlaceHolder}
         {...otherProps}
       />
       {rightIcon && (
@@ -31,7 +31,7 @@ export default function AppTextInput({
           <MaterialCommunityIcons
             name={rightIcon}
             size={20}
-            color={Colors.stormCloud}
+            color={Colors.secondary}
             style={styles.rightIconStyles}
           />
         </TouchableOpacity>
@@ -42,7 +42,7 @@ export default function AppTextInput({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.lightGrey,
+    backgroundColor: Colors.Background,
     borderRadius: 25,
     flexDirection: "row",
     padding: 15,

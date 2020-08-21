@@ -1,14 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View, Button, TextInput, ScrollView, FlatList} from 'react-native';
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  TextInput,
+  ScrollView,
+  FlatList,
+} from "react-native";
 
 import useStatusBar from "../hooks/useStatusBar";
 
-const ChatScreen = (props) => {
+const LogScreen = (props) => {
   useStatusBar("dark-content");
 
   return (
     <View style={styles.screen}>
-      <Text> ~~ This is a ChatScreen ~~ </Text>
+      <Text> ~~ This is a Food Log Screen ~~ </Text>
     </View>
   );
 };
@@ -22,4 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ChatScreen;
+export default LogScreen;
